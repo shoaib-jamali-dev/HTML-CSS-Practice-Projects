@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* https://grabient.com/HQVg7AnANKAMCMMQGYAcSAsYZgGyxlwCZFgTthldkZ4JsCjhYIMoNh5UIg?angle=135 */
+    background: linear-gradient(135deg, #ffffc4 0.000%, #ff6164 50.000%, #b00012 100.000%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+#container{
+    position: relative;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+
+#container span, .toot{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#container .toot{
+    position: absolute;
+    background-color: black;
+    color: white;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  
+}
+
+.toot::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+}
+
+#container:hover .toot{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
