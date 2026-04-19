@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#accordion{
+    margin: 100px auto;
+    width: 600px;
+
+}
+
+#accordion li{
+    list-style: none;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+
+#accordion li label{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: blue;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#accordion label + input[type="radio"]{
+    display: none;
+}
+
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#accordion label + input[type = "radio"]:checked + .content{
+    max-height: 400px;
+}
