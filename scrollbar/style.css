@@ -1,0 +1,29 @@
+
+
+body{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: black;
+    width: 25rem;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.scrolldiv{
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-object{
+    padding: 15px;
+}
