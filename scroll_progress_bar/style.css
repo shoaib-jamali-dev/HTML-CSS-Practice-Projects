@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 40px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.box {
+  border: 3px solid white;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.scroll-indicator {
+  height: 10px;
+  width: calc(100% - 5rem);
+  position: fixed;
+  /* https://grabient.com/HQDgrAzANMBsCcB2KBGYAGMsoFp3BXjBhXXRIgCZd8xEQbhKAWaPYK5d9CYjZrvkKUgA?angle=180 */
+  border-radius: 3px;
+  top: 10px;
+}
+
+.scroll-indicator .progress{
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    background: linear-gradient(
+    180deg,
+    #a9caff 0%,
+    #b8cbff 16.667%,
+    #d3cbff 33.333%,
+    #f0c8f9 50%,
+    #ffc5f1 66.667%,
+    #ffc0ec 83.333%,
+    #ffbaec 100%
+  );
+}
