@@ -8,5 +8,6 @@ function scroll(){
     let scrolled = (scrolltop/scrollHeight)*100
     indicator.style.width = `${scrolled}%`
     console.log(indicator.style.width = `${scrolled}%`);
+    indicator.textContent = `${Math.trunc(scrolled)}%`
     
 }

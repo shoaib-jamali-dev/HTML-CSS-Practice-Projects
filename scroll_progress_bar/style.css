@@ -26,7 +26,7 @@ p {
 }
 
 .scroll-indicator {
-  height: 10px;
+  height: 20px;
   width: calc(100% - 5rem);
   position: fixed;
   /* https://grabient.com/HQDgrAzANMBsCcB2KBGYAGMsoFp3BXjBhXXRIgCZd8xEQbhKAWaPYK5d9CYjZrvkKUgA?angle=180 */
@@ -48,4 +48,7 @@ p {
     #ffc0ec 83.333%,
     #ffbaec 100%
   );
+  color: rgb(38, 0, 255);
+  font-weight: bold;
+  text-align: center;
 }
