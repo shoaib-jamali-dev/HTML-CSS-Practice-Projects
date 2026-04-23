@@ -28,7 +28,7 @@ body{
 input{
     border: none;
     outline: none;
-    width: 90px;
+    width: 90%;
     padding: 10px 20px;
     font-size: 16px;
 }
@@ -43,5 +43,17 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fa-eye{
+    font-size: 20px;
+    color: #777;
+    transition: 0.2s ease;
+}
+
+.fa-eye:hover{
+    color: blue;
+    cursor: pointer;
+
 }
 
